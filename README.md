@@ -24,10 +24,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Setup up Azure Infrastucture: Create a resource group,virtual network, and subnet in Azure
+- Deploy Virtual Machines: Deploy a Windows Server VM (will become the domain controller)
+- Install Active Directory Domain services: One the windows Server VM install and promote it to a Domain Controller, creating a new Domain
+- Join Windows 10 VM to the Domain: Connect the Windows 10 VM to the newly created Active Directory domain
+- Create User Accounts: Use Powershell on the domain controller to bulk create user accounts
+- Test Domain Login:Log into the Windows 10 VM using the domain user accounts to verify everything is working
 
 <h2>Deployment and Configuration Steps</h2>
 
