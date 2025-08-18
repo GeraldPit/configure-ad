@@ -77,20 +77,24 @@ This tutorial outlines the implementation of on-premises Active Directory within
       •Select "Active Directory Domain Services → Install
       •After installation, Click Promote to a domain controller → Create new forest
       •Confirmation screen of successful promotion/restart
+   <img width="1666" height="886" alt="Screen Shot 2025-08-14 at 10 11 57 PM" src="https://github.com/user-attachments/assets/42221615-6f96-4e7b-a382-19733e98499a" />
 
-4. Join Windows 10 VM to the Domain
+
+5. Join Windows 10 VM to the Domain
       •RDP to Client1
       •Go to settings → System → About → Join Domain
       •Enter Domain (e.g "lab.local") and credentials of a domain admin.
       •Restart Client1.
 
 
-5. Create User Accounts via Powershell
+6. Create User Accounts via Powershell
       •RDP to DC1
       •Open Powershell as Adminstrator
       •Use a script to bulk-create users
+   <img width="1467" height="912" alt="Screen Shot 2025-08-14 at 10 20 37 PM" src="https://github.com/user-attachments/assets/1eaac409-b5c9-4057-b0a6-93ff0dd76056" />
 
-6. Test Domain Login
+
+8. Test Domain Login
       •RDP to Client1
       •At login choose "Other user" enter "lab\User1 " and password
       •Confirm successful login
